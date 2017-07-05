@@ -22,5 +22,15 @@ let convert = (sentence) => {
 
   return result.join(" ")
 }
-
+let run = process.argv;
+if(run.length == 3){
+  console.log(`Hasilnya : ${convert(run[2])}`)
+} else if(run.length == 4){
+  console.log(`Hasilnya : ${convert(run[2])} ${convert(run[3])}`)
+} else if(run.length == 5){
+  console.log(`Hasilnya : ${convert(run[2])} ${convert(run[3])} ${convert(run[4])}`)
+} else {
+  console.log('masukan maksimum 3 kata');
+}
+// console.log(run);
 // Your CLI code here
