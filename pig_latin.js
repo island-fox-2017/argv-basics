@@ -19,8 +19,12 @@ let convert = (sentence) => {
   for (let i=0;i<words.length;i++) {
     result[i] = pigLatin(words[i])
   }
-
   return result.join(" ")
 }
 
 // Your CLI code here
+console.log(convert(process.argv.slice(2).join(' ')));
+
+// process.argv.slice(2).forEach((convert, index, array) => {
+// console.log(`${index}: '${convert}'`);
+// });
