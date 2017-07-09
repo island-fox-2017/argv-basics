@@ -1,6 +1,8 @@
 'use strict'
-
+let word = process.argv.slice(2).join(" ");
+//let word =  word1[0];
 let pigLatin = (word) => {
+
   let firstLetter = word.charAt(0);
   if(isPowel(firstLetter)){
     return word
@@ -22,5 +24,9 @@ let convert = (sentence) => {
 
   return result.join(" ")
 }
+
+console.log(convert(word))
+
+
 
 // Your CLI code here
