@@ -20,7 +20,16 @@ let convert = (sentence) => {
     result[i] = pigLatin(words[i])
   }
 
-  return result.join(" ")
+  return result.join(" ");
 }
-
+//
 // Your CLI code here
+let argx = process.argv
+console.log(pigLatin(argx[2]));
+console.log(isPowel(argx[2]));
+console.log(convert(argx[2]));
+
+// for(let i = 0; i < 5; i++){
+//   console.log(i + " : " + argx[i]);
+//
+// }
